@@ -32,9 +32,7 @@ function Ball(x,y){
             this.a = Math.pow(this.x - hole.x,2)
             this.b = Math.pow(this.y-hole.y,2)
             this.dist = (Math.sqrt(this.a+this.b)-(this.radius+hole.radius))
-            console.log(this.dist)
             if(this.dist<0){
-                console.log("hello");
                 hole = new Hole();
                 this.radius--;
                 time+=1000;
