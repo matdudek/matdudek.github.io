@@ -10,22 +10,22 @@ function Ball(x,y){
         ctx.closePath()
     }
     this.physics    = function(){
-        if((this.x>canvas.width-10) && beta>0)
+        if((this.x>canvas.width-10) && gamma>0)
         {
             this.x= this.x
-        }else if((this.x<10) && beta<0){
+        }else if((this.x<10) && gamma<0){
             this.x= this.x
         }else{
-            this.x += beta/25;
+            this.x += gamma/25;
         }
 
-        if((this.y>canvas.height-10) && gamma>0)
+        if((this.y>canvas.height-10) && beta>0)
         {
             this.y= this.y
-        }else if((this.y<10) && gamma<0){
+        }else if((this.y<10) && beta<0){
             this.y= this.y
         }else{
-            this.y += gamma/25;
+            this.y += beta/25;
         }
     }
     this.colisions  = function(){
