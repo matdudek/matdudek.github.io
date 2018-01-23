@@ -1,3 +1,15 @@
 #myCanvas{
     border:1px solid black;
 }
+#points{
+    position: absolute;
+    left:100px;
+    top : 8px;
+}
+#startGame{
+    position: absolute;
+    top:50px;
+    left:650px;
+    border:1px solid black;
+    padding:15px;
+}
