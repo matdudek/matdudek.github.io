@@ -8,8 +8,8 @@
 }
 #startGame{
     position: absolute;
-    top:650px;
-    left:50px;
+    top:30px;
+    left:30px;
     border:1px solid black;
     padding:15px;
 }

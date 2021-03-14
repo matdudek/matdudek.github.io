@@ -159,12 +159,12 @@ function RedHole(){
 }
 
 
-window.addEventListener("deviceorientation", manipulation,false);
+window.addEventListener("deviceorientation", manipulation, false);
 let width = window.innerWidth;
 let height = window.innerHeight;
 let canvas = document.getElementById("myCanvas")
-canvas.width = 600;
-canvas.height = 600;
+canvas.width = width - 20;
+canvas.height = height - 40;
 let ctx = canvas.getContext("2d");
 let ball = new Ball(200,200,ctx)
 let BluePoint;
@@ -174,6 +174,7 @@ let beta = 0;
 let gamma = 0;
 let timeLeft = 30;
 let points = 0;
+
 function appStart(){
     BluePoint = new BlueHole();
     GreenPoint = new GreenHole();
